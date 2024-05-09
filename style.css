@@ -41,11 +41,65 @@ body {
     cursor: pointer;
 }
 
+.input-button:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.todo-list {
+    padding: 0;
+}
+
+#list-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #list-container li {
     list-style: none;
     font-size: 16px;
     font-weight: 600;
-    padding: 12px 8px;
     user-select: none;
+    background-color: white;
+    margin: 10px 0;
+    padding: 12px 50px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.btnEdit {
+    background-color: lightpink;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
     cursor: pointer;
+    position: absolute;
+    right: 92px;
+    top: 8px;
+    font-size: 16px;
+}
+
+.btnEdit:hover {
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btnDelete {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 65px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    font-size: 16px;
+}
+
+.btnDelete:hover {
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
 }
