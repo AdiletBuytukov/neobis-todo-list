@@ -42,7 +42,7 @@ body {
 }
 
 .input-button:hover {
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
 }
 
 .todo-list {
@@ -83,7 +83,7 @@ body {
 }
 
 .btnEdit:hover {
-    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 5px 0 rgba(0,0,0,0.75);
 }
 
 .btnDelete {
@@ -101,5 +101,17 @@ body {
 }
 
 .btnDelete:hover {
-    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 5px 0 rgba(0,0,0,0.75);
 }
+
+#list-container .checked {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.checkbox {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+
