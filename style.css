@@ -107,6 +107,8 @@ body {
 #list-container .checked {
     text-decoration: line-through;
     color: grey;
+    background-color: darkseagreen;
+
 }
 
 .checkbox {

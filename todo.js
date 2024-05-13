@@ -10,11 +10,17 @@ function addTask() {
     li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
 
-    const btnEdit = document.createElement('button');
+    let btnEdit = document.createElement('button');
     btnEdit.innerHTML = 'Edit'
     li.appendChild(btnEdit);
     btnEdit.name = 'btnEdit';
     btnEdit.className = 'btnEdit';
+    btnEdit.onclick = function () {
+      if (li) {
+        li.contentEditable=true;
+        li.focus();
+      }
+    }
 
     const btnDelete = document.createElement('button');
     btnDelete.innerHTML = 'Delete'
@@ -30,12 +36,12 @@ function addTask() {
   saveLocalStorage();
 }
 
+
 listContainer.addEventListener("click", function (e) {
   if (e.target.className === "btnDelete") {
     e.target.parentElement.remove();
     saveLocalStorage();
   }
-
 }, false);
 
 listContainer.addEventListener("change", function (e) {
